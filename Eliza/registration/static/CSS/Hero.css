@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+body {
+    background-color: #d0cee6;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    color: rgb(70, 69, 69);
+}
+
+ul {
+    list-style: none;
+}
+
+/* sticky navbar */
+.sticky {
+    position: fixed;
+    top: 0;
+
+}
+
+/* navbar */
+
+nav{
+    position: absolute;
+    top: 6px;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color:white;
+}
+
+/* navbar links  */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+/* navlinks li */
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+
+/* hero section login and signup button */
+
+/* hero section login button */
+
+.login-button {
+    padding: 7px 13px;
+    background: #f14728;
+    border-radius: 30px;
+    border-color: white;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 5px;
+    transition: ease 0.4s;
+}
+
+/* hover for login button  */
+
+.login-button:hover {
+    background: white;
+    color: black;
+    border-color: white;
+}
+
+
+/* hero section signup button  */
+
+.signup-button {
+    padding: 7px 13px;
+    background: #f14728;
+    border-radius: 30px;
+    border-color: white;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 5px;
+    transition:  0.4s;
+}
+/* get started button hover */
+
+.signup-button:hover {
+    background: white;
+    color: black;
+    border-color: white;
+    
+}
+
+
+/* menu button for mobiles used in media query (hamburger)*/
+
+.menu-btn {
+    position: absolute;
+    top:30px;
+    right: 30px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+    fill: white;
+}
+
+
+/* header - for hero section */
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/static/images/background6.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    /* font-size: 11px; */
+}
+
+/* hero content title and subtitle */
+
+.header-content {
+    margin-bottom: 500px;
+    color: white;
+    text-align: center;
+}
+
+/* header-content h1 format */
+
+.header-content h1 {
+    font-size: 70px;
+    margin-top: 10px;
+    transition: ease 0.6;
+}
+
+span {
+    color: #b2b5b2;
+}
+
+/* hero subcontent format */
+
+.header-content h2 {
+    font-size:  20px;
+    font-weight: 300;
+    padding-bottom: 30px;
+}
+
+/* start button  */
+
+.start-button {
+    padding: 8px 25px;
+    background: transparent;
+    border: solid 2px;
+    border-radius: 30px;
+    border-color: white;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 5px;
+    font-size:large;
+    transition: ease 0.3s;
+}
+
+/* start button hover effect */
+
+.start-button:hover {
+    background-color: #f14728;
+    border: none;
+}
+
+
+/* nav members animaiton  */
+
+.nav-member {
+    transition: all 0.4s;
+}
+
+.nav-member:hover {
+    color: #f14728;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* feature section */
+
+section {
+    width: 90%;
+    margin: 80px auto;
+}
+
+
+/* title of feature section */
+
+.title {
+    font-size: 4vmin;
+    text-align: left;
+    color: #20262E;
+    margin-bottom: 40px;
+}
+
+/* for desiging or asthetics  */
+
+.line {
+    background-color: #20262E;
+    width: 150px;
+    height: 7px;
+    margin: 3px 2px;
+    border-radius: 5px;
+}
+
+/* for desiging or asthetics  */
+
+.inlinee {
+    background-color: #20262E;
+    width: 50px;
+    height: 7px;
+    margin: auto 2px;
+    border-radius: 5px;
+}
+
+
+
+/* for the sub box  block 1*/
+
+.block-1 {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+}
+
+
+/* for the sub box block 1 content */
+
+.block-1-content {
+    width: 80%;
+    text-align: center;
+}
+/* image inside the box */
+
+.image {
+    width: 200px;
+}
+
+.learn-more-btn{
+    color: black;
+    border: solid 1px black;
+    padding: 7px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+                    /* feature section ends */
+
+
+
+
+
+
+
+
+
+/* highlights section starts */
+
+.content-highlights {
+    margin: 19px 16px;
+    display: flex;
+    justify-content: center;
+    /* background: #b29ddf; */
+    padding: 19px 16px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+/* text container */
+
+.text-container {
+    width: 40%;
+    margin-right: 30px;
+}
+
+/* youtube video */
+
+.iframe-vid {
+    width: 500px;
+    height: 281px;
+}
+
+/* button  */
+
+.highlights-button {
+    padding: 6px 15px;
+    font-size: medium;
+    border: solid 2px #20262E;
+    border-radius: 6px;
+    background-color: #20262E;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: ease 0.4s;
+    font-weight:500;
+}
+
+.highlights-button:hover {
+    background-color: rgb(78, 78, 78);
+    border-color: rgb(78, 78, 78);
+}
+
+
+
+
+
+
+
+
+
+/* media query for mobile */
+
+@media only screen  and (max-width:850px){
+
+   
+    .menu-btn {
+        display: block;
+    }
+    nav {
+        padding: 0;
+    }
+    .sticky {
+        backdrop-filter: none;
+    }
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background:rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(9px);
+        margin-top: -1300px;
+        transition: all 1s ease;
+    }
+
+    .mobile-menu {
+        margin-top: 0px;
+    }
+
+    .nav-links li {
+        margin: 30px auto;
+    }
+
+    .header-content {
+        margin-bottom: 400px;
+    }
+
+    .header-content h2{
+        text-align: center;
+    }
+
+    .header-subcontent {
+        margin:auto;
+    }
+    
+    .start-button {
+        font-size: small;
+    } 
+
+    .signup-button, .login-button {
+        display: none;
+    }
+}
+
+
+/* media query for feature page */
+
+
+@media only screen  and (max-width:850px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .block-1 {
+        flex-direction: column;
+    }
+
+    .block-2 {
+        flex-direction: column;
+    }
+
+    .block-1-content {
+        width: 90%;
+    }
+
+    .block-2-content {
+        width: 90%;
+    }
+}
+
+/* media query for highlights */
+
+
+@media only screen  and (max-width:850px) {
+    .content-highlights {
+        flex-direction: column-reverse;
+        margin: 10px 12px;
+        align-items: center;
+        padding-bottom: 30px;
+        
+    }
+
+    .text-container {
+        min-width: 100%;
+        margin-left: 40px;
+    }
+
+    .iframe-vid {
+        width: 300px;
+        height: 168px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+}
